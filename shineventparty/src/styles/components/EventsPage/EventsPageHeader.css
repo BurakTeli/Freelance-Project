@@ -1,0 +1,42 @@
+.events-header {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-family: "Georgia", serif;
+}
+
+.events-title {
+  font-size: 2.8rem;
+  color: #1e1e1e;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+
+.events-title-sub {
+  font-size: 1.5rem;
+  color: #e4648c;
+  margin: 8px 0 0 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+.events-header-desc {
+  font-size: 1.1rem;
+  color: #3a3a3a;
+  margin-top: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.events-location {
+  font-size: 1rem;
+  color: #6b6b6b;
+  margin-top: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

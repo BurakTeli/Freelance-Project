@@ -1,0 +1,76 @@
+.about-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Remove spacing between items */
+  margin-top: 80px; /* Top spacing from previous section */
+  position: relative; /* Required for absolute positioning inside */
+}
+
+/* 🎯 Center circular image – must be in FRONT of the others */
+.about-circle {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%; /* Keeps it circular */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  margin: 0 -55px; /* Negative margin to bring side images closer */
+  z-index: 2; /* Above left and right circles */
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.about-circle:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  z-index: 3; /* Bring to front when hovered */
+}
+
+/* 🌙 Left circular image – positioned BEHIND center image */
+.about-circle-left {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  background-color: #fff; /* Base background */
+  overflow: hidden;
+  z-index: 1; /* Behind center image */
+}
+
+.about-circle-left::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -45px;
+  width: 130px;
+  height: 175px;
+  background-color: #f8f6f2; /* Match the page background */
+  border-radius: 50%; /* Crescent (moon) shape */
+  z-index: 1;
+}
+
+/* 🌙 Right circular image – positioned BEHIND center image */
+.about-circle-right {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1; /* Behind center image */
+}
+
+.about-circle-right::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -45px;
+  width: 130px;
+  height: 177px;
+  background-color: #fff; /* Should match page background */
+  border-radius: 50%; /* Crescent effect on the left side */
+  z-index: 1;
+}

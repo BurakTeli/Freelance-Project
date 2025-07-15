@@ -1,0 +1,16 @@
+/* === Container for the 2x2 image grid === */
+.events-image-grid {
+  display: grid; /* Uses CSS Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  gap: 20px; /* Space between grid items */
+  padding: 0 10px; /* 10px padding on the left and right */
+  margin-top: 40px; /* Space above the grid */
+}
+
+/* === Styling for each image inside the grid === */
+.events-image-grid img {
+  width: 100%; /* Image fills the grid cell horizontally */
+  aspect-ratio: 1 / 1; /* Makes each image a perfect square */
+  object-fit: cover; /* Crops the image to fill the area without distortion */
+  border-radius: 0; /* No rounded corners – sharp edges */
+}

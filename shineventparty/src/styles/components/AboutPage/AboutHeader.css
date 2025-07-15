@@ -1,0 +1,13 @@
+.about-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e4648c;
+  text-align: center;
+}

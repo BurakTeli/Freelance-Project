@@ -1,0 +1,107 @@
+/* Root container: two-column grid layout */
+.graduation-detail2-root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: 100%;
+  min-height: 480px;
+  background: #fff;
+  margin-bottom: 0;
+}
+
+/* Left image block */
+.graduation-detail2-img-block {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/* Main image styling */
+.graduation-detail2-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  min-height: 480px;
+}
+
+/* Right info section */
+.graduation-detail2-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 48px 56px 48px;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 480px;
+}
+
+/* Background color for right info block */
+.memory-bg {
+  background: #ede7e3;
+}
+
+/* Small top label */
+.graduation-detail2-title {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 6px;
+  color: #222;
+  font-weight: 400;
+}
+
+/* Main headline styling */
+.graduation-detail2-headline {
+  font-size: 36px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #222;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+/* Centered small image */
+.graduation-detail2-center-img img {
+  width: 580px;
+  height: 580px;
+  object-fit: cover;
+  margin-bottom: 24px;
+
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+}
+
+/* Main descriptive text */
+.graduation-detail2-text {
+  font-size: 17px;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 16px;
+  line-height: 1.55;
+}
+
+/* Subtext */
+.graduation-detail2-subtext {
+  font-size: 15px;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* Responsive: single column for mobile */
+@media (max-width: 900px) {
+  .graduation-detail2-root {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .graduation-detail2-img-block,
+  .graduation-detail2-info-block {
+    min-height: 300px;
+  }
+  .graduation-detail2-info-block {
+    padding: 32px 12px;
+  }
+}

@@ -1,0 +1,47 @@
+/* Wrapper for the whole section: vertically aligned */
+.moments-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  
+  /* Thin vertical line above the text */
+  .vertical-line {
+    width: 3px;
+    height: 100px;
+    background-color: #7c7c7c;
+    margin-bottom: 20px;
+  }
+  
+  /* Text block container */
+  .moments-title-text {
+    text-align: center;
+    color: #1c1c1c;
+    font-family: "Georgia", serif;
+  }
+  
+  /* Upper small subtitle text */
+  .upper-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #444;
+  }
+  
+  /* Main large title in red tone */
+  .main-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 6px 0;
+    color: #b3304a; /* reddish tone */
+  }
+  
+  /* Decorative dot below the text */
+  .dot {
+    font-size: 24px;
+    color: #b3304a;
+  }
+  

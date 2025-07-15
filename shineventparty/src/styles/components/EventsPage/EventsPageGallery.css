@@ -1,0 +1,76 @@
+.events-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 80px;
+  position: relative;
+}
+
+/* Center circular image – must be in FRONT of the others */
+.events-circle {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  margin: 0 -55px;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.events-circle:hover {
+  transform: scale(1.05);
+  z-index: 3;
+}
+
+/* Left circular image – positioned BEHIND center image */
+.events-circle-left {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.events-circle-left::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -45px;
+  width: 130px;
+  height: 175px;
+  background-color: #f8f6f2;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Right circular image – positioned BEHIND center image */
+.events-circle-right {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.events-circle-right::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -45px;
+  width: 130px;
+  height: 177px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}

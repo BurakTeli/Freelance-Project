@@ -1,0 +1,219 @@
+/* === Overlay for chatbot dialog (background layer) === */
+.chatbot-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 2100;
+}
+
+/* === Main chatbot dialog box === */
+.chatbot-dialog {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  max-width: 96vw;
+  height: 600px;
+  max-height: 95vh;
+  background: #fff;
+  border-radius: 20px 20px 10px 10px;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* === Chatbot header (logo, title, close button) === */
+.chatbot-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 24px 12px 24px;
+  background: #141414;
+  border-radius: 20px 20px 0 0;
+  gap: 10px;
+}
+
+/* === Chatbot logo style === */
+.chatbot-logo {
+  width: 32px;
+  height: 32px;
+}
+
+/* === Title in chatbot header === */
+.chatbot-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-left: 6px;
+}
+
+/* === Message list container (scrollable) === */
+.chatbot-messages-list {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 16px 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* === Categories scroll area (shows categories in list) === */
+.chatbot-category-scroll {
+  max-height: calc(5 * 64px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* === General message bubble style === */
+.chatbot-message {
+  background: #fff;
+  color: #222;
+  border-radius: 16px 16px 16px 0;
+  padding: 16px 22px;
+  margin: 0 20px;
+  font-size: 1.04rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  font-weight: 500;
+  user-select: text;
+  transition: background 0.15s;
+}
+
+/* === Hover effect for categories and back button === */
+.chatbot-category-message:hover,
+.chatbot-back-message:hover {
+  background: #f5f6fb;
+  transition: background 0.15s;
+  color: #e4648c;
+}
+
+/* === Back to categories button style === */
+.chatbot-back-message {
+  color: #2777c3;
+  font-weight: 600;
+  margin-top: 18px;
+  text-align: left;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* === Question list container === */
+.chatbot-question-list {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+/* === Space between each question item === */
+.chatbot-question-item + .chatbot-question-item {
+  margin-top: 8px;
+}
+
+/* === Individual question (clickable) === */
+.chatbot-question-text {
+  font-weight: 600;
+  background: #f8f7fa;
+  padding: 12px 18px;
+  border-radius: 12px 12px 12px 0;
+  transition: background 0.18s;
+  cursor: pointer;
+}
+
+/* === Hover/focus effect for questions === */
+.chatbot-question-text:hover,
+.chatbot-question-text:focus {
+  background: #f5e9f6;
+  color: #e4648c;
+}
+
+/* === Answer text (shown when question is opened) === */
+.chatbot-answer-text {
+  margin: 10px 0 0 16px;
+  background: #ffe3ef;
+  border-radius: 10px 10px 10px 2px;
+  padding: 13px 16px;
+  color: #e4648c;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 12px #f8dbe7;
+  animation: fadeIn 0.3s;
+}
+
+/* === Fade-in animation for answer === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Disabled input area at the bottom === */
+.chatbot-input-placeholder {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px 6px 20px;
+  gap: 8px;
+}
+
+/* === Style for input field === */
+.chatbot-input-placeholder input {
+  flex: 1;
+  padding: 10px 10px;
+  border: 1.5px solid #ececec;
+  border-radius: 9px;
+  background: #fafafa;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* === Style for disabled button === */
+.chatbot-input-placeholder button {
+  background: none;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* === Close button in header === */
+.chatbot-close-btn {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2.1rem;
+  color: #e4648c;
+  cursor: pointer;
+  z-index: 15;
+  padding: 0;
+}
+
+/* === Responsive: for mobile screens === */
+@media (max-width: 480px) {
+  .chatbot-dialog {
+    width: 98vw;
+    min-width: unset;
+    margin: 0 1vw 12px 1vw;
+    height: 85vh;
+    max-height: 97vh;
+  }
+  .chatbot-message {
+    margin: 0 6px;
+    padding: 13px 10px;
+    font-size: 1rem;
+  }
+  .chatbot-question-text {
+    padding: 11px 10px;
+  }
+  .chatbot-answer-text {
+    padding: 11px 8px;
+    font-size: 0.97rem;
+  }
+}

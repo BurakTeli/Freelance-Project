@@ -1,0 +1,17 @@
+.events-description {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  font-family: "Georgia", serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.description-line .highlight {
+  color: #c14450; /* Soft luxury red tone */
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}

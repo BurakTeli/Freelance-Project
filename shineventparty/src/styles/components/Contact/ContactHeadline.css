@@ -1,0 +1,10 @@
+.contact-headline {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contact-headline h1 {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,65 @@
+/* Floating launcher button - always on bottom right, now bigger and higher */
+.chatbot-launcher {
+  position: fixed;
+  right: 32px;
+  bottom: 80px; /* Daha yukarıda */
+  width: 80px; /* Daha büyük */
+  height: 80px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  z-index: 3000;
+  padding: 0;
+}
+
+.chatbot-launcher:hover,
+.chatbot-launcher:focus {
+  box-shadow: 0 8px 32px rgba(228, 100, 140, 0.19);
+  transform: scale(1.08);
+  outline: none;
+}
+
+.chatbot-launcher-logo {
+  width: 60px; /* Logo da daha büyük */
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: filter 0.2s;
+}
+
+@media (max-width: 600px) {
+  .chatbot-launcher {
+    right: 12px;
+    bottom: 40px; /* Mobilde de biraz yukarıda */
+    width: 62px;
+    height: 62px;
+  }
+  .chatbot-launcher-logo {
+    width: 46px;
+    height: 46px;
+  }
+}
+@keyframes chatbot-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 8px 32px rgba(228, 100, 140, 0.19);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.chatbot-launcher.pulse {
+  animation: chatbot-pulse 0.8s ease-in-out;
+}

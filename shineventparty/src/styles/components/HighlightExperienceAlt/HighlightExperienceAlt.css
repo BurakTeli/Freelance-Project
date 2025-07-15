@@ -1,0 +1,51 @@
+/* ========== Main container for reversed layout ========== */
+.highlight-experience-alt {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ========== Shared panel styles ========== */
+.panel {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== Left panel – image ========== */
+.left-image-panel {
+  background-color: #f9f4f4;
+  padding: 0;
+}
+
+.panel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== Right panel – text ========== */
+.right-text-panel {
+  background-color: #f9f4f4;
+}
+
+.panel-content {
+  text-align: center;
+  padding: 40px;
+  color: #1c1c1c;
+}
+
+.panel-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.panel-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

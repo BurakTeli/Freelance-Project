@@ -1,0 +1,55 @@
+/* 👤 Main container for the owner section (image + text) */
+.owner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    gap: 40px;                /* Space between image and text */
+    padding: 60px 20px;       /* Inner spacing for top/bottom and left/right */
+    max-width: 1200px;
+    margin: 0 auto;           /* Centers the section on the page */
+    flex-wrap: wrap;          /* Allows wrapping on smaller screens */
+  }
+  
+  /* 📸 Image container on the left */
+  .owner-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the image inside its column */
+  }
+  
+  /* 🖼️ Image styling (non-rounded, shadowed) */
+  .owner-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px; /* You can set this to 0px for sharp edges */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    object-fit: cover; /* Ensures the image covers the area properly */
+  }
+  
+  /* 📝 Text column on the right */
+  .owner-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  /* 🔠 Name (Title) */
+  .owner-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* 🧾 Role / Subtitle */
+  .owner-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #e4648c; /* Brand accent color */
+  }
+  
+  /* 📃 Description text */
+  .owner-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  

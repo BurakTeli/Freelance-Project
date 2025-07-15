@@ -1,0 +1,63 @@
+/* 🎬 Fullscreen video section */
+.video-intro {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+/* 🎥 Fullscreen responsive video */
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✨ Centered content container */
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+/* 📝 Main title text */
+.video-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* 🔘 Rounded action button */
+.video-button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 32px;
+  border: none;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.video-button:hover {
+  background-color: #e2e2e2;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .video-title {
+    font-size: 1.8rem;
+  }
+
+  .video-button {
+    font-size: 0.9rem;
+    padding: 10px 24px;
+  }
+}

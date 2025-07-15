@@ -1,0 +1,10 @@
+/* MezuniyetAnaSection.css */
+.mezuniyet-main-container {
+  display: flex;
+  flex-direction: row; /* yatay hizalama */
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 40px;
+  flex-wrap: nowrap; /* wrap yerine nowrap denenebilir */
+}

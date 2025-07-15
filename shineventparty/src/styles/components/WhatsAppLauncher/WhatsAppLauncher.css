@@ -1,0 +1,50 @@
+/* Floating WhatsApp launcher button - fixed at the bottom left corner */
+.whatsapp-launcher {
+  position: fixed;
+  left: 32px; /* Anchor to the left side */
+  bottom: 80px; /* Distance from the bottom */
+  width: 80px; /* Button width */
+  height: 80px; /* Button height */
+  background: #25d366; /* WhatsApp green background */
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16); /* Subtle shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  z-index: 2999; /* Stays on top of most elements */
+  padding: 0;
+}
+
+/* Button hover and focus effect */
+.whatsapp-launcher:hover,
+.whatsapp-launcher:focus {
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.19);
+  transform: scale(1.08); /* Slightly enlarges on hover */
+  outline: none;
+}
+
+/* WhatsApp logo image styling */
+.whatsapp-launcher-logo {
+  width: 60px; /* Logo width */
+  height: 60px; /* Logo height */
+  object-fit: contain; /* Keep the image aspect ratio */
+  border-radius: 50%; /* Logo stays circular */
+  transition: filter 0.2s;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .whatsapp-launcher {
+    left: 12px; /* Less space on small screens */
+    bottom: 40px;
+    width: 62px;
+    height: 62px;
+  }
+  .whatsapp-launcher-logo {
+    width: 46px;
+    height: 46px;
+  }
+}

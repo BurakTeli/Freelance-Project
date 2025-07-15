@@ -1,0 +1,18 @@
+/* src/styles/App/App.css */
+
+/* Sayfa genel yapısı */
+.app {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff; /* Arka plan beyaz */
+  color: #333;
+  min-height: 100vh;
+}
+
+/* İçerik alanı */
+.main-content {
+  padding-top: 120px; /* Navbar yüksekliği kadar boşluk bırak */
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

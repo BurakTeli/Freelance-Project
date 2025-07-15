@@ -1,0 +1,15 @@
+.birthday-story-container {
+    max-width: 850px;
+    margin: 100px auto 80px auto; /* ⬅️ Üst boşluk 100px yapıldı */
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .story-paragraph {
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+  }
+  

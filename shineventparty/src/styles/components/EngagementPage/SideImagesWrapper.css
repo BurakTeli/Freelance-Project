@@ -1,0 +1,27 @@
+.side-images-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0; /* Image height will be determined dynamically based on their own aspect ratio */
+}
+
+/* Common image style – used for both left and right top images */
+.side-image {
+  position: absolute;
+  width: 240px; /* Increased width for larger visuals */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio and avoid stretching */
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  z-index: 2; /* Ensure images stay above the background */
+}
+
+/* Top-left image – aligned flush to the left edge */
+.top-left {
+  top: 40px;   /* Distance from top */
+  left: 0px;   /* No gap on the left side */
+}
+
+/* Top-right image – aligned flush to the right edge and positioned lower */
+.top-right {
+  top: 140px;  /* Positioned lower than left image for visual variety */
+  right: 0px;  /* No gap on the right side */
+}

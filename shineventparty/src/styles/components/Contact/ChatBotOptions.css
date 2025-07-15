@@ -1,0 +1,159 @@
+/* src/styles/components/ChatBot/ChatBotDialog.css */
+
+/* Overlay for the chatbot dialog */
+.chatbot-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 2100;
+}
+
+/* Main dialog window */
+.chatbot-dialog {
+  background: #fff;
+  border-radius: 20px 20px 10px 10px;
+  width: 390px;
+  min-height: 510px;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 0;
+}
+
+/* Header section with logo and title */
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px 12px 24px;
+  background: #141414;
+  border-radius: 20px 20px 0 0;
+  gap: 10px;
+}
+
+.chatbot-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.chatbot-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-left: 6px;
+}
+
+/* Greeting message (first line) */
+.chatbot-message {
+  padding: 12px 24px 2px 24px;
+  font-size: 1.02rem;
+  color: #444;
+  margin-bottom: 2px;
+}
+
+/* Blue info bubble */
+.chatbot-bubble {
+  margin: 0 24px 20px 24px;
+  background: #eaf6ff;
+  color: #2777c3;
+  border-radius: 14px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  border: 1.5px solid #90caf9;
+  display: inline-block;
+}
+
+.bolt-emoji {
+  font-size: 1.1em;
+}
+
+/* Option buttons */
+.chatbot-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px 10px 24px;
+}
+
+.chatbot-option-btn {
+  background: #fff;
+  border: 2px solid #141414;
+  color: #141414;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  transition: background 0.14s, border 0.15s;
+  gap: 8px;
+}
+
+.chatbot-option-btn[disabled] {
+  cursor: default;
+  opacity: 1;
+}
+
+/* Icon for each option button */
+.option-icon {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+/* SOS badge styling */
+.sos-badge {
+  font-size: 11px;
+  margin-left: 4px;
+  color: #fff;
+  background: #d32f2f;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Input area at the bottom (disabled, only for design) */
+.chatbot-input-placeholder {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px 6px 20px;
+  gap: 8px;
+}
+
+.chatbot-input-placeholder input {
+  flex: 1;
+  padding: 10px 10px;
+  border: 1.5px solid #ececec;
+  border-radius: 9px;
+  background: #fafafa;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.chatbot-input-placeholder button {
+  background: none;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* Close (X) button styling */
+.chatbot-close-btn {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2.1rem;
+  color: #e4648c;
+  cursor: pointer;
+  z-index: 15;
+  padding: 0;
+}

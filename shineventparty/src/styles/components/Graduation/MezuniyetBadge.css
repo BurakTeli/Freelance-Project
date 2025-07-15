@@ -1,0 +1,29 @@
+.mezuniyet-badge {
+  position: absolute;
+  top: 60%;
+  left: 49%;
+  transform: translate(-50%, -50%); /* Centering */
+  width: 140px;
+  height: 140px;
+  background-color: #d2b48c; /* Light brown / açık kahverengi */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.badge-text {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1c1c1c;
+  line-height: 1.4;
+}
+
+.badge-text hr {
+  border: none;
+  border-top: 1px solid #1c1c1c;
+  width: 50%;
+  margin: 4px auto;
+}

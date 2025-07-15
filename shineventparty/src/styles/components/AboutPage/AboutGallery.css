@@ -1,0 +1,36 @@
+.about-gallery-container {
+  padding: 60px 40px;
+  background-color: #fef6f6;
+}
+
+.about-gallery-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #e4648c;
+  margin-bottom: 30px;
+}
+
+/* Horizontal scroll area */
+.about-gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+
+.gallery-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 250px;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

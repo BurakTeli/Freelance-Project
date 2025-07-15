@@ -1,0 +1,139 @@
+/* ========== GENERAL LAYOUT ========== */
+.gallery-section {
+  display: flex;
+  justify-content: center; /* Center the gallery columns */
+  gap: 20px;                /* Space between columns */
+  padding: 40px;            /* Outer padding */
+  flex-wrap: wrap;          /* Allow wrapping on smaller screens */
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;  /* Stack images vertically */
+  gap: 20px;               /* Space between images in the column */
+}
+
+/* ========== LEFT COLUMN ========== */
+
+/* Large vertical image on the left */
+.left-photo-1 img {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-right: 1220px; /* Push it far left (manual positioning) */
+}
+
+/* Top small image aligned with left-photo-1 */
+.left-photo-2 {
+  position: relative;
+  top: -236px;      /* Move upward to align visually */
+  margin-left: 300px;
+}
+
+.left-photo-2 img {
+  width: 320px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Bottom small image aligned with left-photo-2 */
+.left-photo-3 {
+  position: relative;
+  top: -246px;
+  margin-left: 342px;
+}
+
+.left-photo-3 img {
+  width: 280px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* ========== CENTER COLUMN ========== */
+
+/* Main center image */
+.center-photo-main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -650px; /* Move up to align with left column */
+}
+
+.center-photo-main img {
+  width: 280px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-left: 60px;
+}
+
+/* ========== RIGHT COLUMN ========== */
+
+/* Top right vertical image */
+.right-photo-1 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: -1240px;   /* Align vertically with center image */
+  margin-left: 640px; /* Push to the right */
+}
+
+.right-photo-1 img {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* ========== FAR RIGHT FLOATING IMAGE ========== */
+
+/* Additional image on far right that scrolls with the page */
+.flat-photo-relative {
+  position: absolute;     /* Positioned relative to nearest parent */
+  top: 240px;             /* Distance from top of the container */
+  right: 10px;            /* Align to the far right edge */
+  z-index: 1;             /* Ensure it's behind fixed elements */
+}
+
+.flat-photo-relative img {
+  width: 280px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25); /* Subtle shadow effect */
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* For tablets and medium screens (below 1024px) */
+@media (max-width: 1024px) {
+  .gallery-section {
+    padding: 20px;
+  }
+
+  .gallery-column {
+    flex: 1 1 45%;
+    align-items: center;
+  }
+}
+
+/* For mobile screens (below 768px) */
+@media (max-width: 768px) {
+  .gallery-section {
+    flex-direction: column;  /* Stack columns vertically */
+    padding: 10px;
+  }
+
+  .gallery-column {
+    width: 100%;
+    align-items: center;
+  }
+
+  .gallery-column img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,14 @@
+.about-title-heading {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6e6256;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.highlight-red {
+  color: #c94b77;
+  font-weight: 600;
+}

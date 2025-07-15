@@ -1,0 +1,36 @@
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 40px; /* Daha basık bir görünüm */
+    font-family: 'Playfair Display', serif;
+    min-height: 60px; /* Footer'ı dar tutar */
+  }
+  
+  /* Sadece logo büyür */
+  .footer-logo-img {
+    height: 80px; /* Ne kadar büyük istersen ayarla */
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* Link yapısı */
+  .footer-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #2E3A34;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #A68B75;
+  }
+  

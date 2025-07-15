@@ -1,0 +1,85 @@
+/* 🟩 Main container without excessive padding */
+.event-slider-container {
+  width: 100%;
+  padding: 60px 40px; /* Sağ ve sol eşit padding */
+  box-sizing: border-box;
+  background-color: #fefefe;
+}
+
+/* 🟦 Row of cards, evenly spaced */
+.event-card-wrapper {
+  display: flex;
+  gap: 32px; /* Space between cards */
+  justify-content: flex-start; /* Kartları sola yasla */
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Gerekirse taşan içerik scroll olur */
+  scrollbar-width: none; /* Firefox için scrollbar gizle */
+}
+
+/* Chrome için scrollbar gizle */
+.event-card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🟥 Individual card */
+.event-card {
+  width: 360px;
+  height: 520px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+
+  /* 🟨 Ensure button can fit inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 🖼️ Card image */
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* 📝 Title centered in the middle of image */
+.event-title-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+/* 🆕 Detaylar butonu (visible and styled) */
+.event-detail-button {
+  position: relative;
+  z-index: 2; /* 🟦 Make sure it's above the image */
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #e4648c;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 🆕 Button hover effect */
+.event-detail-button:hover {
+  background-color: #c94b77;
+}

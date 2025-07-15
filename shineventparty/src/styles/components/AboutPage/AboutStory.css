@@ -1,0 +1,38 @@
+/* Main container for the story section */
+.about-story-container {
+  padding: 60px 40px;
+  background-color: #fffafc; /* light pink background */
+}
+
+/* Title at the top of the section */
+.about-story-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #e4648c; /* brand pink color */
+  margin-bottom: 40px;
+}
+
+/* Layout for image and text side by side */
+.about-story-content {
+  display: flex;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the owner's photo */
+.about-story-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 16px; /* smooth corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+/* Styling for the text section */
+.about-story-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333; /* dark grey for readability */
+}

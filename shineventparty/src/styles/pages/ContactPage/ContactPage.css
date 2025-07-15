@@ -1,0 +1,24 @@
+.contact-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0; /* içerik görünür kalsın */
+}
+
+/* Arka plan görseli sadece siyah beyaz olacak şekilde */
+.contact-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/shine/3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: -1;
+  opacity: 1;
+}
