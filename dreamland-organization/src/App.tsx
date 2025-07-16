@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Home/Navbar"; // Navbar import edildi
 import "./index.css"; // Global stil dosyası (varsa)
+import HomePage from "./pages/HomePage";
 
 /**
  * App component for Dreamland Organization Project.
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <HomePage />
     </div>
   );
 }

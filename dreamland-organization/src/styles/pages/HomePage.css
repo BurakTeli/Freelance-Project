@@ -1,21 +1,24 @@
+/* Container for the entire homepage */
 .home-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 85px 85px 0 85px; /* top:35px, right:35px, bottom:0, left:35px */
+  padding: 85px 85px 0 85px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
+/* Main hero image styling */
 .home-hero-image {
   width: 100%;
-  height: calc(100% - 35px); /* üst boşluğu hesaba kat */
+  height: calc(100% - 35px);
   object-fit: cover;
   transition: opacity 0.5s ease-in-out;
   border-radius: 20px;
+  margin-top: 20px; /* Space between navbar and image */
 }
 
-/* Navigation button general style */
+/* General style for navigation buttons */
 .nav-button {
   position: absolute;
   top: 50%;
@@ -30,16 +33,57 @@
   transition: background 0.3s;
 }
 
+/* Hover effect for navigation buttons */
 .nav-button:hover {
   background: rgba(255, 255, 255, 0.9);
 }
 
-/* Left button positioning */
+/* Left navigation button position */
 .left-button {
   left: 10px;
 }
 
-/* Right button positioning */
+/* Right navigation button position */
 .right-button {
   right: 10px;
+}
+
+/* Navbar container */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 40px;
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+/* Navbar logo styling */
+.navbar-logo {
+  height: 50px;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+/* Individual navbar link styling */
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Hover effect for navbar links */
+.navbar-links a:hover {
+  color: #e4648c;
 }
