@@ -2,15 +2,44 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 85px 85px 0 85px;
+  padding: 85px 85px 0 85px; /* top:35px, right:35px, bottom:0, left:35px */
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .home-hero-image {
   width: 100%;
-  height: calc(100% - 35px);
+  height: calc(100% - 35px); /* üst boşluğu hesaba kat */
   object-fit: cover;
   transition: opacity 0.5s ease-in-out;
   border-radius: 20px;
+}
+
+/* Navigation button general style */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Left button positioning */
+.left-button {
+  left: 10px;
+}
+
+/* Right button positioning */
+.right-button {
+  right: 10px;
 }
