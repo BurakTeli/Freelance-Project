@@ -3,7 +3,7 @@
   overflow-x: auto;
   gap: 30px;
   margin: 40px 0;
-  padding: 30px 35px; /* Yukarıdan boşluk artırıldı */
+  padding: 100px 35px; /* Yukarıdan boşluk artırıldı */
   position: relative; /* Z-index çalışabilsin */
   z-index: 1;
 }
