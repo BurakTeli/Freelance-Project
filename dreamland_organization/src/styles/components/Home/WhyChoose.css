@@ -1,0 +1,73 @@
+/* src/styles/components/Home/WhyChoose.css */
+
+.why-choose {
+  background-image: url("/assets/Dogum9.jpeg"); /* luxury-feeling background image */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  min-height: 800px; /* Enlarged background image area */
+}
+
+.why-choose::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay for better text visibility */
+  z-index: 1;
+}
+
+.why-choose h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+  position: relative;
+  z-index: 2;
+}
+
+.why-choose h2 span {
+  font-style: italic;
+  font-weight: 400;
+  color: #e4648c; /* luxury pink accent color */
+}
+
+.why-items {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.why-item {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto; /* center each item */
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.why-item:first-child {
+  border-left: none; /* remove border for the first item */
+}
+
+.why-item h3 {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.why-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}

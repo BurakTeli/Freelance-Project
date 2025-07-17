@@ -3,6 +3,7 @@ import "./index.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSlider from "./components/Home/HeroSlider";
 import ImageGallery from "./components/Home/ImageGallery";
+import WhyChoose from "./components/Home/WhyChoose";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <HeroSlider />
       <ImageGallery />
+      <WhyChoose />
     </>
   );
 }
