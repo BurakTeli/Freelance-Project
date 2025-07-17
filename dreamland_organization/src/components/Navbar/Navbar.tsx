@@ -6,10 +6,10 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-section navbar-left">
         <a href="#home" className="navbar-link">
-          Home
+          AnaSayfa
         </a>
         <a href="#about" className="navbar-link">
-          About
+          Hakkımızda
         </a>
       </div>
 
@@ -23,10 +23,10 @@ function Navbar() {
 
       <div className="navbar-section navbar-right">
         <a href="#events" className="navbar-link">
-          My Organizations
+          Organizasyonlarımız
         </a>
         <a href="#contact" className="navbar-link">
-          Contact
+          İletişim
         </a>
       </div>
     </nav>
