@@ -1,0 +1,9 @@
+.hero-slider {
+  padding: 40px 35px 10px 35px;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
