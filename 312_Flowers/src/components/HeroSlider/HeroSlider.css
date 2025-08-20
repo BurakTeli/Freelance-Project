@@ -1,0 +1,58 @@
+/* Slider container */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  /* Slide basic style */
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start outside the screen */
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4; /* Placeholder background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease; /* Smooth slide transition */
+    cursor: pointer;
+  }
+  
+  /* Active slide (visible one) */
+  .slide.active {
+    left: 0;
+  }
+  
+  /* Content inside slide */
+  .slide-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6); /* Transparent box */
+    padding: 20px 40px;
+    border-radius: 12px;
+  }
+  
+  /* Title text */
+  .slide-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Action button */
+  .slide-content button {
+    padding: 10px 20px;
+    background-color: #e4648c; /* Pink button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Hover effect for button */
+  .slide-content button:hover {
+    background-color: #c94c74;
+  }
+  
