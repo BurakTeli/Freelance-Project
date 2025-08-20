@@ -1,0 +1,64 @@
+/* Navbar container */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* General row style */
+  .navbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+  }
+  
+  /* Top row */
+  .top-row {
+    position: relative;
+  }
+  
+  /* Left links */
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Logo centered */
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nav-logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e4648c; /* Pink brand color */
+  }
+  
+  /* Links style */
+  .nav-left a,
+  .nav-right a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-left a:hover,
+  .nav-right a:hover {
+    color: #e4648c;
+  }
+  
+  /* Placeholder for second row */
+  .bottom-row {
+    background-color: #f8f8f8;
+    padding: 8px 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
